@@ -35,7 +35,7 @@ class Chatbot extends JFrame {
 					txt.append("Bot: How can I help you?)\n");
 				}
 
-				//you can write add as many question you want.
+				//you can add as many question as you want.
 				
 				else{
 					txt.append("Bot: Sorry! I Did not understood what you asked..")
