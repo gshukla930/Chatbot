@@ -21,17 +21,24 @@ class Chatbot extends JFrame {
 		field.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e){
+				
 				String msg = field.getText();
 				txt.append("You: "+msg+ "\n");
 				field.setText("");
 				if(msg.toLowerCase().contains("hi")){
 					txt.append("Bot: Hello\n");
 				}
-				if(msg.toLowerCase().contains("name")){
-					txt.append("Bot: Mai Tumhari gf Hu aur tmhe naam bhi ni yaad:(\n");
+				if(msg.toLowerCase().contains("What you Can do  for me?")){
+					txt.append("Bot: I can help you with your problems.(\n");
 				}
-				if(msg.toLowerCase().contains("love")){
-					txt.append("Bot: I Love You Too:)\n");
+				if(msg.toLowerCase().contains(" ")){
+					txt.append("Bot: How can I help you?)\n");
+				}
+
+				//you can write add as many question you want.
+				
+				else{
+					txt.append("Bot: Sorry! I Did not understood what you asked..")
 				}
 			}
 		});
